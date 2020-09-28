@@ -8,7 +8,7 @@ class Scraper
     doc = Nokogiri::HTML(open(index_url))
     binding.pry
     name = doc.css(".student-card.student-name").text.strip
-    location = doc.css(".student-card.student-location").text.strip 
+    location = doc.css(".student-card.Attr:0x128b0a8").text.strip 
     profile = doc.css(".student-card.href").text
     @students << {name: name, location: location, profile: profile} 
   end
