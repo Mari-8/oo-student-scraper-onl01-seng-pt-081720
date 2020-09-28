@@ -9,7 +9,7 @@ class Scraper
     binding.pry
     name = doc.css(".student-card" ".student-name").text.strip
     location = doc.css(".student-card" ".student-location").text.strip 
-    profile = doc.css(".student-card" "href").text.strip
+    profile = doc.css(".student-card" "href").textstrip
   end
 
   def self.scrape_profile_page(profile_url)
