@@ -9,7 +9,7 @@ class Scraper
     name = doc.css(".student-card" ".student-name").text.strip
     location = doc.css(".student-card" ".student-location").text.strip 
     profile = doc.css(".student-card" "href").text
-    @students = 
+    @students = {:name 
   end
 
   def self.scrape_profile_page(profile_url)
